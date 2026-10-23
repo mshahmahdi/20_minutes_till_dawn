@@ -2,6 +2,7 @@ package com.tilldawn.lwjgl3;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+import com.sun.tools.classfile.ConstantPool;
 import com.tilldawn.Main;
 
 /** Launches the desktop (LWJGL3) application. */
@@ -10,7 +11,8 @@ public class Lwjgl3Launcher {
         if (StartupHelper.startNewJvmIfRequired()) return; // This handles macOS support and helps on Windows.
         createApplication();
         if (args.length == 0) {
-
+            int a = 0;
+            a += 1;
         }
     }
 
