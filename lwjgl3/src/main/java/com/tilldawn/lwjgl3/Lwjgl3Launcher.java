@@ -9,6 +9,9 @@ public class Lwjgl3Launcher {
     public static void main(String[] args) {
         if (StartupHelper.startNewJvmIfRequired()) return; // This handles macOS support and helps on Windows.
         createApplication();
+        if (args.length == 0) {
+
+        }
     }
 
     private static Lwjgl3Application createApplication() {
