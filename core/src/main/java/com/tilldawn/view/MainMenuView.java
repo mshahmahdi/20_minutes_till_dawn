@@ -91,7 +91,7 @@ public class MainMenuView implements Screen {
 
     @Override
     public void show() {
-
+        Main.getBatch().setProjectionMatrix(new Matrix4().setToOrtho2D(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight()));
         music.setLooping(true);
         music.play();
         stage = new Stage(new ScreenViewport());
